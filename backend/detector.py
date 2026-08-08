@@ -1,7 +1,9 @@
 from ultralytics import YOLO
+import os
 
 # Model ek dafa load hoga
-model = YOLO("yolov8n.pt")
+model_path = os.path.join(os.path.dirname(__file__), "..", "yolov8n.pt")
+model = YOLO(model_path)
 
 print("YOLO Model Loaded Successfully!")
 
