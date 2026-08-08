@@ -26,7 +26,7 @@ async def detect(image: UploadFile = File(...)):
     print("Detect API Called!")
 
     try:
-        upload_folder = "uploads"
+        upload_folder = "/tmp"
         os.makedirs(upload_folder, exist_ok=True)
 
         image_path = os.path.join(upload_folder, "upload.jpg")
