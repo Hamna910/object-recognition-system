@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from detector import detect_objects
+from backend.detector import detect_objects
 import os
 
 app = FastAPI()
